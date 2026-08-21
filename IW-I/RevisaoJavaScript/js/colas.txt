@@ -1,0 +1,92 @@
+ Cola de suporte
+
+ && -> AND  || -> or
+
+
+estruturas de repeticao
+ for (let i = 0; i <= 10; i++) {
+    console.log(i);
+} - faz uma loop de 0 a 10 - contagem -- for (inicio; condicao; incremento)
+let contador = 0;
+
+while (contador <= 10) {
+    console.log(contador);
+    contador++;
+}
+
+
+ARRAY
+
+
+variavel.
+
+.push(""); -> adicionar 
+.pop(""); -> remove o ultimo
+.shift(""); -> remove o primeiro
+.unshift(""); -> adicionar no comeco
+.length -> conta os elementos da lista
+
+
+for (let i = 0; i < nomes.length; i++) -> percorre o array
+
+
+
+function variavelsomar(a, b) {
+    return a + b;
+} -> cria uma funcao, nesse caso a de somar
+
+let resultado = somar(10, 5);
+console.log(resultado); 
+
+
+querySelector: 
+Passar uma string com regras de CSS.
+Retornar só o primeiro item achado.
+Servir para tags, classes ou IDs.
+Por ID: const meuBotao = document.querySelector('#btn');
+Por classe: const item = document.querySelector('.ativo');
+Por tag: const paragrafo = document.querySelector('p');
+
+addEventListener() -> esperar um evento acontecer
+textContent -> acessa o valor encontrado / mostra o literal
+
+
+innerHTML -> Por isso innerHTML é útil quando queremos colocar elementos HTML dentro de outro elemento.
+
+style -. altera o css pelo js ou html
+
+createElement() -> cria um elemento (geralmento cria um elemento em html)
+
+appendChild() -> coloca um elemento filho em um pai
+
+exemplo: 
+    let resultado = document.querySelector("#resultado"); -> pega o resultado
+
+    let titulo = document.createElement("h2"); -> cria elemento
+
+    titulo.textContent = "Olá!"; -> acessa o valor do elemento criado
+
+    resultado.appendChild(titulo); -> coloca o o elemento criado no resultado
+
+card:
+    let resultado = document.querySelector("#resultado");
+
+    let card = document.createElement("div");
+
+    let nome = document.createElement("h2");
+
+    nome.textContent = "Raphael";
+
+    card.appendChild(nome);
+
+    resultado.appendChild(card);
+
+    let idade = document.createElement("p");
+    idade.textContent = "Idade: 18";
+
+    card.appendChild(idade);
+
+    let funcao = document.createElement("p");
+    funcao.textContent = "Função: Desenvolvedor";
+
+    card.appendChild(funcao);

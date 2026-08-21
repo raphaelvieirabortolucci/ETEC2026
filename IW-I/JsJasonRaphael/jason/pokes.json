@@ -1,0 +1,92 @@
+[
+   {
+      "nPokedex": 1,
+      "nome": "Bulbasaur",
+      "tipo": "Grama",
+      "tipoS": "Veneno",
+      "regiao": "Kanto",
+      "evo": "Ivysaur",
+      "preEvo": "Nenhuma"
+   },
+   {
+      "nPokedex": 4,
+      "nome": "Charmander",
+      "tipo": "Fogo",
+      "tipoS": "",
+      "regiao": "Kanto",
+      "evo": "Charmeleon",
+      "preEvo": "Nenhuma"
+   },
+   {
+      "nPokedex": 7,
+      "nome": "Squirtle",
+      "tipo": "Água",
+      "tipoS": "",
+      "regiao": "Kanto",
+      "evo": "Wartortle",
+      "preEvo": "Nenhuma"
+   },
+   {
+      "nPokedex": 25,
+      "nome": "Pikachu",
+      "tipo": "Elétrico",
+      "tipoS": "",
+      "regiao": "Kanto",
+      "evo": "Raichu",
+      "preEvo": "Pichu"
+   },
+   {
+      "nPokedex": 39,
+      "nome": "Jigglypuff",
+      "tipo": "Normal",
+      "tipoS": "Fada",
+      "regiao": "Kanto",
+      "evo": "Wigglytuff",
+      "preEvo": "Igglybuff"
+   },
+   {
+      "nPokedex": 94,
+      "nome": "Gengar",
+      "tipo": "Fantasma",
+      "tipoS": "Veneno",
+      "regiao": "Kanto",
+      "evo": "Nenhuma",
+      "preEvo": "Haunter"
+   },
+   {
+      "nPokedex": 133,
+      "nome": "Eevee",
+      "tipo": "Normal",
+      "tipoS": "",
+      "regiao": "Kanto",
+      "evo": "Vaporeon, Jolteon, Flareon, Espeon, Umbreon, Leafeon, Glaceon, Sylveon",
+      "preEvo": "Nenhuma"
+   },
+   {
+      "nPokedex": 149,
+      "nome": "Dragonite",
+      "tipo": "Dragão",
+      "tipoS": "Voador",
+      "regiao": "Kanto",
+      "evo": "Nenhuma",
+      "preEvo": "Dragonair"
+   },
+   {
+      "nPokedex": 448,
+      "nome": "Lucario",
+      "tipo": "Lutador",
+      "tipoS": "Aço",
+      "regiao": "Sinnoh",
+      "evo": "Nenhuma",
+      "preEvo": "Riolu"
+   },
+   {
+      "nPokedex": 658,
+      "nome": "Greninja",
+      "tipo": "Água",
+      "tipoS": "Sombrio",
+      "regiao": "Kalos",
+      "evo": "Nenhuma",
+      "preEvo": "Frogadier"
+   }
+]
