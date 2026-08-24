@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+
 }
 
 h1 {
@@ -8,15 +9,20 @@ h1 {
 
 table {
     border-collapse: collapse;
+    margin: 20px auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 th {
     padding: 12px;
     background-color: #d32f2f;
     color: white;
+    text-align: center;
 }
 
 td{
     background-color: #ece7e7;
     border: 1px solid #000;
+    text-align: center;
 }
