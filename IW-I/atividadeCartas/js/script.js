@@ -56,6 +56,16 @@ function valorNaipe(naipe) {
         return 1;
     }
 }
+// !!!!! terminar, fazer um verificador de pontos !!!!!
+function verificador(pontos){
+    if (pontosJogador > pontosComputador)
+        window.alert("O jogador ganhou o jogo")
+}
+
+
+
+
+
 
 // pega a API e percorre ela, criando um baralho novo
 fetch("https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1")
@@ -115,11 +125,13 @@ botaoJogar.addEventListener("click", function () {
             // comparar
             if (valorJogador > valorComputador) {
 
-                console.log("Jogador ganhou!");
+                window.alert("Você ganhou 3 pontos");
+                pontosJogador += 3;
             }
             else if (valorJogador < valorComputador) {
 
-                console.log("Computador ganhou!");
+                window.alert("O computador ganhou 3 pontos");
+                pontosComputador += 3;
             }
 
             else {
@@ -127,10 +139,14 @@ botaoJogar.addEventListener("click", function () {
                 let naipeComputador = valorNaipe(cartaComputador.suit);
 
                 if (naipeJogador > naipeComputador) {
-                    console.log("Jogador ganhou!");
+                    
+                    window.alert("Você ganhou 3 pontos");
+                    pontosJogador += 3;
                 }
                 else {
-                    console.log("Computador ganhou!");
+                    
+                    window.alert("O computador ganhou 3 pontos");
+                    pontosComputador += 3;
                 }
             }
 
