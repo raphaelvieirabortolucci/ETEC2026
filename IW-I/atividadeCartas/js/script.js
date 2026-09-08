@@ -15,6 +15,8 @@ let pontosComputador = 0;
 let cartaJogador;
 let cartaComputador;
 
+// define que o jogo vai continuar
+let finalizador = false;
 
 // essa funcao cria os valores do J, Q, K e As
 function valorCarta(valor) {
@@ -57,9 +59,15 @@ function valorNaipe(naipe) {
     }
 }
 // !!!!! terminar, fazer um verificador de pontos !!!!!
-function verificador(pontos){
-    if (pontosJogador > pontosComputador)
-        window.alert("O jogador ganhou o jogo")
+function verificador() {
+    if (pontosJogador >= 10) {
+        window.alert("O jogador ganhou o jogo");
+        finalizador = true;
+    }
+    else if (pontosComputador >= 10) {
+        window.alert("O computador ganhou o jogo");
+        finalizador = true;
+    }
 }
 
 
@@ -127,11 +135,15 @@ botaoJogar.addEventListener("click", function () {
 
                 window.alert("Você ganhou 3 pontos");
                 pontosJogador += 3;
+                verificador()
+
             }
             else if (valorJogador < valorComputador) {
 
                 window.alert("O computador ganhou 3 pontos");
                 pontosComputador += 3;
+                verificador()
+
             }
 
             else {
@@ -142,11 +154,13 @@ botaoJogar.addEventListener("click", function () {
                     
                     window.alert("Você ganhou 3 pontos");
                     pontosJogador += 3;
+                    verificador()
                 }
                 else {
                     
                     window.alert("O computador ganhou 3 pontos");
                     pontosComputador += 3;
+                    verificador()
                 }
             }
 
