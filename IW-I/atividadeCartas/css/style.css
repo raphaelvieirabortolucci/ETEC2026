@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b2f;
+    color: white;
+ 
+    min-height: 100vh;
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+main {
+    width: 90%;
+    max-width: 900px;
+ 
+    text-align: center;
+ 
+    background-color: #252545;
+ 
+    padding: 30px;
+ 
+    border-radius: 15px;
+}
+ 
+h1 {
+    margin-bottom: 20px;
+}
+ 
+.explicacao {
+    max-width: 700px;
+ 
+    margin: 0 auto 25px;
+ 
+    line-height: 1.6;
+ 
+    color: #dcdcec;
+}
+ 
+#placar {
+    font-size: 22px;
+ 
+    font-weight: bold;
+ 
+    margin: 20px 0;
+}
+ 
+#mensagem {
+    font-size: 24px;
+ 
+    font-weight: bold;
+ 
+    margin: 15px;
+}
+ 
+#jogo {
+    min-height: 300px;
+ 
+    display: flex;
+ 
+    justify-content: center;
+ 
+    align-items: center;
+ 
+    gap: 30px;
+ 
+    margin: 20px 0;
+}
+ 
+#jogo img {
+    width: 180px;
+ 
+    border-radius: 10px;
+ 
+    box-shadow: 0 5px 15px black;
+}
+ 
+.botoes {
+    display: flex;
+ 
+    justify-content: center;
+ 
+    gap: 15px;
+ 
+    flex-wrap: wrap;
+}
+ 
+button {
+    padding: 12px 25px;
+ 
+    border: none;
+ 
+    border-radius: 8px;
+ 
+    background-color: #4c6fff;
+ 
+    color: white;
+ 
+    font-size: 16px;
+ 
+    font-weight: bold;
+ 
+    cursor: pointer;
+}
+ 
+button:hover {
+    background-color: #3657d6;
+}

@@ -1,21 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+ 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+ 
+    <title>Batalha de Cartas</title>
+ 
+    <link rel="stylesheet" href="css/style.css">
 </head>
+ 
 <body>
-    
-    <h1>Jogo da batalha de cartas</h1>
-
-    <button id="btnJogo">inicia o jogo</button>
-
-    <div id="jogo"></div>
-    <button id="btnJogar">Jogar</button>
-    <button id="btnPassar">Passar</button>
-
-
+ 
+    <main>
+ 
+        <h1>Batalha de Cartas</h1>
+ 
+        <p class="explicacao">
+            Neste jogo, você receberá uma carta e deverá escolher entre
+            <strong>Jogar</strong> ou <strong>Passar</strong>.
+            Ao jogar, uma carta será sorteada para o computador e as cartas
+            serão comparadas. Quem tiver a carta de maior valor ganha
+            <strong>3 pontos</strong>, conta as figuras estão na ordem Q, J, K. 
+            Em caso de empate, o naipe, ouros, espadas, copas e paus, decide o vencedor. 
+            Se você passar, o computador ganha <strong>1 ponto</strong>.
+            O primeiro a chegar a <strong>10 pontos</strong> vence a partida!
+        </p>
+ 
+        <p id="placar">
+            Jogador: 0 | Computador: 0
+        </p>
+ 
+        <p id="mensagem"></p>
+ 
+        <div id="jogo"></div>
+ 
+        <div class="botoes">
+ 
+            <button id="btnJogo">
+                Iniciar Jogo
+            </button>
+ 
+            <button id="btnJogar" style="display: none;">
+                ▶ Jogar
+            </button>
+ 
+            <button id="btnPassar" style="display: none;">
+                ⏭️ Passar
+            </button>
+ 
+            <button id="btnRejogar" style="display: none;">
+                🔄 Rejogar
+            </button>
+ 
+        </div>
+ 
+    </main>
     <script src="js/script.js"></script>
 </body>
+ 
 </html>
