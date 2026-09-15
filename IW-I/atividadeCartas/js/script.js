@@ -24,6 +24,10 @@ let cartaComputador;
 let finalizador = false;
  
  
+function limparCartas() {
+    divJogo.innerHTML = "";
+}
+
 // essa funcao cria os valores do J, Q, K e As
 function valorCarta(valor) {
  
@@ -137,7 +141,9 @@ botao.addEventListener("click", function () {
     if (finalizador == true) {
         return;
     }
- 
+    
+     limparCartas()
+
     fetch(`https://deckofcardsapi.com/api/deck/${deckId}/draw/?count=1`)
         .then(response => response.json())
         .then(dados => {
@@ -159,6 +165,8 @@ botao.addEventListener("click", function () {
             // esconde o botao iniciar
             botao.style.display = "none";
         });
+
+   
 });
  
  
@@ -283,6 +291,8 @@ botaoPassar.addEventListener("click", function () {
         botaoPassar.style.display = "none";
         botao.style.display = "block";
     }
+
+
 });
  
  
