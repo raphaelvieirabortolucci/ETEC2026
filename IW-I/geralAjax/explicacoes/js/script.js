@@ -22,4 +22,27 @@
 // nome do usuário
 // email do usuário
 
+const botao = document.getElementById("btn");
+const nome = document.getElementById("nome");
+const email = document.getElementById("email");
+
+botao.addEventListener("click" consultar);
+
+async function consultar() {
+    
+    try {
+
+    } catch (erro) {
+
+        // seu código aqui
+
+    }
+}
+
+
+
+
+
+
+
 
