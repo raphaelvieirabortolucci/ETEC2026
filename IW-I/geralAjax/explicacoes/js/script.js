@@ -23,22 +23,39 @@
 // email do usuário
 
 const botao = document.getElementById("btn");
-const nome = document.getElementById("nome");
-const email = document.getElementById("email");
+const resultado = document.getElementById("resultado");
 
-botao.addEventListener("click" consultar);
+botao.addEventListener("click", consultar);
 
 async function consultar() {
-    
+
     try {
+
+        const resposta = await fetch(
+            "https://jsonplaceholder.typicode.com/users"
+        );
+
+        const usuarios = await resposta.json();
+
+        usuarios.forEach(dados => {
+
+            const nomeUsuario = document.createElement("h2");
+            const emailUsuario = document.createElement("p");
+
+            nomeUsuario.textContent = dados.name;
+            emailUsuario.textContent = dados.email;
+
+            resultado.appendChild(nomeUsuario);
+            resultado.appendChild(emailUsuario);
+
+        });
 
     } catch (erro) {
 
-        // seu código aqui
+        console.log("Erro ao consultar a API.");
 
     }
 }
-
 
 
 
