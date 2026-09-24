@@ -67,11 +67,17 @@ async function consultar() {
 
         const card = document.createElement("div");
 
+        const imagem = document.createElement("img");
+
+        imagem.src = dados.sprites.front_default;
+
         const evolucoes = document.createElement("div");
 
         const titulo = document.createElement("h1");
 
         titulo.textContent = `Nome: ${dados.name}`;
+
+        card.appendChild(imagem);
 
         card.appendChild(titulo);
 
