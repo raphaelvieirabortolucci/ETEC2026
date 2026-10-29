@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf3ea;
+    color: #4a3828;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #7a5230;
+    margin-bottom: 5px;
+}
+
+header p {
+    text-align: center;
+}
+
+h2 {
+    font-size: 17px;
+    color: #7a5230;
+    border-bottom: 2px solid #e6d3bd;
+    padding-bottom: 4px;
+    margin-top: 25px;
+}
+
+/* campos de texto */
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #c9a27e;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #4a3828;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid #e0c3a3;
+}
+
+/* botões */
+button {
+    margin: 5px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c9a27e;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b58a63;
+}
+
+/* botão da visualização escolhida */
+button.ativo {
+    background-color: #7a5230;
+}
+
+#limpar {
+    background-color: #e6d3bd;
+    color: #7a5230;
+}
+
+#limpar:hover {
+    background-color: #d9bfa3;
+}
+
+#contador {
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+/* janela de cookies (fica na frente da página) */
+#autorizacao {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(74, 56, 40, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+#caixaCookies {
+    width: 90%;
+    max-width: 380px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #faf3ea;
+    border-top: 6px solid #c9a27e;
+    text-align: center;
+}
+
+#caixaCookies h2 {
+    margin-top: 0;
+    border-bottom: none;
+}
+
+#botaoNao {
+    background-color: #e6d3bd;
+    color: #7a5230;
+}
+
+#botaoNao:hover {
+    background-color: #d9bfa3;
+}
+
+#resultado {
+    margin-top: 25px;
+}
+
+/* resultados em cartões */
+.cartoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.usuario-card {
+    width: 240px;
+    padding: 12px;
+    border: 1px solid #d9bfa3;
+    border-top: 5px solid #c9a27e;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.usuario-card h3 {
+    margin-top: 0;
+    color: #7a5230;
+}
+
+.usuario-card p {
+    margin: 4px 0;
+}
+
+/* resultados em texto */
+.texto p {
+    padding: 8px 0;
+    margin: 0;
+    border-bottom: 1px solid #e6d3bd;
+}
+
+#mensagemAcesso {
+    font-weight: bold;
+    color: #9b4a2a;
+}
